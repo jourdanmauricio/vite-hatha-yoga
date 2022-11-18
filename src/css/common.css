@@ -1,0 +1,110 @@
+/***************/
+/*   DIVISOR   */
+/***************/
+.text__divider {
+  display: flex;
+  align-items: center;
+  --text-divider-gap: 1rem;
+  margin: 20px;
+  text-transform: uppercase;
+  color: var(--purple-dark);
+  font-weight: 700;
+}
+
+.text__divider p {
+  background-color: var(--gray-ligth);
+  padding: 0 15px;
+  border-radius: 5px;
+}
+
+.text__divider::before,
+.text__divider::after {
+  content: "";
+  height: 2px;
+  background-color: var(--purple-dark);
+  flex-grow: 1;
+}
+
+.text__divider::before {
+  margin-right: var(--text-divider-gap);
+}
+
+.text__divider::after {
+  margin-left: var(--text-divider-gap);
+}
+
+/***************/
+/*   GALLERY   */
+/***************/
+.gallery__container {
+  margin-bottom: 60px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+}
+
+/*****************/
+/*   SEPARADOR   */
+/*****************/
+.separador {
+  width: 100%;
+  height: 250px;
+  background-image: url("./../assets/images/separador.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 60px;
+  color: var(--white);
+}
+
+.separador__quote {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-family: "Noto Serif", serif;
+  /* color: var(--white); */
+}
+
+/**************/
+/*   Button   */
+/**************/
+.button__cta {
+  display: block;
+  margin: 2em auto;
+  min-width: 280px;
+  background-color: var(--purple-medium);
+  color: #fff;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+
+.button__cta:hover {
+  background-color: transparent;
+  border: 2px solid var(--purple-medium);
+  color: var(--purple-medium);
+}
+
+/*************/
+/*   Media   */
+/*************/
+@media (max-width: 992px) {
+  .galeria-container {
+    flex-direction: column;
+  }
+}

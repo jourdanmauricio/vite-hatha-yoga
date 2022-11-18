@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon_purple_light.png" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/favicon_purple_light.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -140,7 +144,7 @@
             </article>
           </div>
 
-          <button class="servicios__cta">Más información</button>
+          <button class="button__cta">Más información</button>
         </div>
       </section>
 
@@ -278,45 +282,69 @@
         </article>
       </section>
     </main>
+
     <footer class="footer">
       <section class="footer__container container">
-        <figure class="footer__picture">
-          <img src="./assets/logos/logo2.svg" alt="" class="footer__img" />
-        </figure>
-        <div class="suscribe">
-          <input
-            type="email"
-            class="suscribe__input"
-            id="Email"
-            name="Email"
-            placeholder="example@email.com"
-            autocomplete="off"
-          />
-          <input class="suscribe__submit" value="Subscribete" type="submit" />
-        </div>
-        <div class="footer__social">
-          <a href="#" class="footer__media">
-            <img
-              src="./assets/icons/icon-facebook.svg"
-              alt=""
-              class="footer__icon"
+        <form class="suscribe__form" novalidate>
+          <div class="input__container">
+            <input
+              type="text"
+              class="suscribe__input"
+              name="name"
+              title="Ingresa solo letras"
+              autocomplete="off"
+              placeholder="Ingresa tu nombre"
+              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$"
             />
-          </a>
-          <a href="#" class="footer__media">
-            <img
-              src="./assets/icons/icon-twitter.svg"
-              alt=""
-              class="footer__icon"
+          </div>
+          <div class="input__container">
+            <input
+              type="email"
+              class="suscribe__input"
+              name="email"
+              title="Ingresa un email válido"
+              autocomplete="off"
+              placeholder="Escribe tu email"
+              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
             />
-          </a>
+          </div>
 
-          <a href="#" class="footer__media">
-            <img
-              src="./assets/icons/icon-instagram.svg"
-              alt=""
-              class="footer__icon"
-            />
-          </a>
+          <input
+            class="button__cta button__cta--suscribe"
+            value="Subscribete"
+            type="submit"
+          />
+        </form>
+
+        <div class="footer__links">
+          <figure class="footer__picture">
+            <img src="./assets/logos/logo2.svg" alt="" class="footer__img" />
+          </figure>
+          <a href="#" class="footer__link">Horarios</a>
+          <a href="#" class="footer__link">Contacto</a>
+          <div class="footer__social">
+            <a href="#" class="footer__media">
+              <img
+                src="./assets/icons/icon-facebook.svg"
+                alt=""
+                class="footer__icon"
+              />
+            </a>
+            <a href="#" class="footer__media">
+              <img
+                src="./assets/icons/icon-twitter.svg"
+                alt=""
+                class="footer__icon"
+              />
+            </a>
+            <a href="#" class="footer__media">
+              <img
+                src="./assets/icons/icon-instagram.svg"
+                alt=""
+                class="footer__icon"
+              />
+            </a>
+          </div>
         </div>
       </section>
     </footer>

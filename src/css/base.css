@@ -1,0 +1,30 @@
+:root {
+  --purple-dark: #170312;
+  /* --purple-medium: #33032d;
+  --purple-ligth: #531253; */
+  --purple-medium: #531253;
+  --purple-ligth: #92698d;
+  --very-dark-blue: hsl(243, 87%, 12%);
+
+  --gray-ligth: #eaeaea;
+  --white: #f4fffd;
+  --black: #000000;
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+
+  --input-error: #f44336;
+
+  --hospital-green: #acd9b2;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+  --xl: 22px;
+
+  --padding-container: 90px 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

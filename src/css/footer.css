@@ -1,0 +1,153 @@
+.footer {
+  margin-top: 90px;
+  background-color: var(--gray-ligth);
+}
+
+.footer__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.suscribe__form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.suscribe__form > * {
+  display: block;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.suscribe__input--ok {
+  border: thin solid var(--purple-medium);
+}
+
+.input__container {
+  position: relative;
+  width: 90%;
+}
+
+.suscribe__input {
+  min-height: 40px;
+  width: 100%;
+  padding: 0 1em;
+  color: var(--purple-medium);
+  font-size: 15px;
+  border: 1px solid var(--purple-medium);
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.button__cta--suscribe {
+  width: 90%;
+}
+
+.suscribe__input:focus,
+.suscribe__input:focus-visible {
+  border-color: var(--purple-ligth);
+  outline: none;
+}
+
+.suscribe__input.suscribe__input--error {
+  border: thin solid var(--input-error);
+}
+
+.suscribe__error {
+  position: absolute;
+  width: 90%;
+  border-radius: 5px;
+  font-size: 80%;
+  color: var(--input-error);
+  transition: all 800ms ease;
+  text-align: center;
+}
+
+.suscribe__error.is-active {
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+.suscribe__none {
+  display: none;
+}
+
+.footer__links {
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.footer__link {
+  list-style: none;
+  color: var(--dark-grayish-blue);
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+
+.footer__media {
+  text-decoration: none;
+}
+
+.footer__icon {
+  display: block;
+}
+
+.footer__img {
+  width: 200px;
+}
+
+@keyframes show-message {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  /**************/
+  /*   FOOTER   */
+  /**************/
+  .footer {
+    background-color: #f2f2f2;
+  }
+
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .footer__img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer__social {
+    margin: auto;
+  }
+
+  .suscribe__form {
+    width: 50%;
+  }
+  .footer__links {
+    width: 50%;
+  }
+}

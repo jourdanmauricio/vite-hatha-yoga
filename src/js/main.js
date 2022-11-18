@@ -23,11 +23,72 @@
 
 // setupCounter(document.querySelector("#counter"));
 
+/************/
+/*   Menu   */
+/************/
 const menuHamIcon = document.querySelector(".menu");
 const mobileMenu = document.querySelector(".mobile-menu");
 
 menuHamIcon.addEventListener("click", toggleMobileMenu);
 
-function toggleMobileMenu() {
+window.addEventListener("mouseup", function (event) {
+  if (event.target != mobileMenu && event.target != menuHamIcon) {
+    mobileMenu.classList.add("inactive");
+  }
+});
+
+function toggleMobileMenu(e) {
   mobileMenu.classList.toggle("inactive");
+  e.stopPropagation();
 }
+
+/******************/
+/*   Suscribete   */
+/******************/
+const $form = document.querySelector(".suscribe__form");
+const $inputs = document.querySelectorAll(".suscribe__input");
+
+$inputs.forEach((input) => {
+  const $span = document.createElement("span");
+  $span.id = input.name;
+  $span.textContent = input.title;
+  $span.classList.add("suscribe__error", "suscribe__none");
+  input.insertAdjacentElement("afterend", $span);
+});
+
+function valiteSuscribe(input) {
+  let pattern = input.pattern || input.dataset.pattern;
+
+  if (input.value !== "") {
+    let regex = new RegExp(pattern);
+    return regex.exec(input.value);
+  } else {
+    return null;
+  }
+}
+
+document.addEventListener("keyup", (e) => {
+  if (e.target.matches(".suscribe__form input")) {
+    const $input = document.getElementsByName(e.target.name)[0];
+    document.getElementById($input.name).classList.remove("is-active");
+
+    if ($input.value == "") {
+      $input.classList.remove("suscribe__input--error");
+    } else {
+      const validate = valiteSuscribe($input);
+      validate != null
+        ? $input.classList.remove("suscribe__input--error")
+        : $input.classList.add("suscribe__input--error");
+    }
+  }
+});
+
+document.addEventListener("submit", (e) => {
+  e.preventDefault();
+  $inputs.forEach((input) => {
+    const validate = valiteSuscribe(input);
+    validate
+      ? document.getElementById(input.name).classList.remove("is-active")
+      : document.getElementById(input.name).classList.add("is-active");
+  });
+});
