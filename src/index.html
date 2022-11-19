@@ -285,37 +285,44 @@
 
     <footer class="footer">
       <section class="footer__container container">
-        <form class="suscribe__form" novalidate>
-          <div class="input__container">
-            <input
-              type="text"
-              class="suscribe__input"
-              name="name"
-              title="Ingresa solo letras"
-              autocomplete="off"
-              placeholder="Ingresa tu nombre"
-              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$"
-            />
-          </div>
-          <div class="input__container">
-            <input
-              type="email"
-              class="suscribe__input"
-              name="email"
-              title="Ingresa un email válido"
-              autocomplete="off"
-              placeholder="Escribe tu email"
-              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-            />
-          </div>
+        <div class="container__form">
+          <form class="subscribe__form" novalidate>
+            <div class="input__container">
+              <input
+                type="text"
+                class="subscribe__input"
+                name="name"
+                title="Ingresa solo letras"
+                autocomplete="off"
+                placeholder="Ingresa tu nombre"
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$"
+                value="Mau"
+              />
+            </div>
+            <div class="input__container">
+              <input
+                type="email"
+                class="subscribe__input"
+                name="email"
+                title="Ingresa un email válido"
+                autocomplete="off"
+                placeholder="Escribe tu email"
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                value="j@g.com"
+              />
+            </div>
 
-          <input
-            class="button__cta button__cta--suscribe"
-            value="Subscribete"
-            type="submit"
-          />
-        </form>
+            <input
+              class="button__cta button__cta--subscribe"
+              value="Subscribete"
+              type="submit"
+            />
+          </form>
 
+          <div id="spinner" class="spinner hidde"></div>
+
+          <h3 class="subscribe__rta" id="subscription-rta"></h3>
+        </div>
         <div class="footer__links">
           <figure class="footer__picture">
             <img src="./assets/logos/logo2.svg" alt="" class="footer__img" />

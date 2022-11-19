@@ -10,19 +10,38 @@
   gap: 90px;
 }
 
-.suscribe__form {
+/************/
+/*   FORM   */
+/************/
+.container__form {
   width: 100%;
+  height: 245px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.subscribe__rta {
+  color: var(--purple-medium);
+  font-size: 1.4em;
+  max-width: 80%;
+}
+
+.subscribe__form {
+  width: 100%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.suscribe__form > * {
+.subscribe__form > * {
   display: block;
   width: 100%;
   margin: 2rem auto;
 }
 
-.suscribe__input--ok {
+.subscribe__input--ok {
   border: thin solid var(--purple-medium);
 }
 
@@ -31,7 +50,7 @@
   width: 90%;
 }
 
-.suscribe__input {
+.subscribe__input {
   min-height: 40px;
   width: 100%;
   padding: 0 1em;
@@ -42,21 +61,21 @@
   background-color: transparent;
 }
 
-.button__cta--suscribe {
+.button__cta--subscribe {
   width: 90%;
 }
 
-.suscribe__input:focus,
-.suscribe__input:focus-visible {
+.subscribe__input:focus,
+.subscribe__input:focus-visible {
   border-color: var(--purple-ligth);
   outline: none;
 }
 
-.suscribe__input.suscribe__input--error {
+.subscribe__input.subscribe__input--error {
   border: thin solid var(--input-error);
 }
 
-.suscribe__error {
+.subscribe__error {
   position: absolute;
   width: 90%;
   border-radius: 5px;
@@ -66,15 +85,21 @@
   text-align: center;
 }
 
-.suscribe__error.is-active {
+.subscribe__error.is-active {
   display: block;
   animation: show-message 1s 1 normal 0s ease-out both;
 }
 
-.suscribe__none {
-  display: none;
+.spinner__container {
+  /* width: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/*************/
+/*   LINKS   */
+/*************/
 .footer__links {
   margin: 2rem auto;
   text-align: center;
@@ -133,6 +158,11 @@
   .footer__container {
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 0;
+  }
+
+  .container__form {
+    width: 50%;
   }
 
   .footer__img {
@@ -144,9 +174,6 @@
     margin: auto;
   }
 
-  .suscribe__form {
-    width: 50%;
-  }
   .footer__links {
     width: 50%;
   }
