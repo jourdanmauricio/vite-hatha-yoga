@@ -112,7 +112,6 @@
   border-top-color: teal;
   border-radius: 50%;
   animation: spinner 1s ease-out infinite;
-  /* animation: spinner 1s linear infinite; */
 }
 
 /************/
@@ -130,7 +129,11 @@
 .form__rta {
   color: var(--purple-medium);
   font-size: 1.4em;
-  max-width: 80%;
+  width: 80%;
+  height: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .form {
@@ -196,12 +199,6 @@
   text-align: center;
   display: block;
   animation: show-message 1s 1 normal 0s ease-out both;
-}
-
-.spinner__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @keyframes spinner {
