@@ -27,7 +27,7 @@
             <a href="/">Inicio</a>
           </li>
           <li>
-            <a href="/">Servicios</a>
+            <a href="/#servicios">Servicios</a>
           </li>
           <li>
             <a href="/">Horarios</a>
@@ -54,49 +54,167 @@
         </ul>
       </div>
     </nav>
-    <h1>Contacto</h1>
+    <main class="contact__main">
+      <section class="contact__container container">
+        <figure class="contact__picture">
+          <!-- <img src="./assets/images/contact.jpg" alt="" class="contact__img" /> -->
+        </figure>
+        <div class="contact__texts">
+          <div class="text__divider"><p>Contacto</p></div>
+
+          <form id="form-contact" class="form" novalidate>
+            <div class="form__group">
+              <span class="form__icon">*</span>
+              <input
+                type="text"
+                class="form__input"
+                name="name-contact"
+                id="name-contact"
+                title="Obligatorio. Ingresa solo letras"
+                autocomplete="off"
+                placeholder="Ingresa tu nombre"
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$"
+                value="Mau"
+                required
+              />
+            </div>
+
+            <div class="form__group">
+              <span class="form__icon">*</span>
+              <input
+                type="email"
+                class="form__input"
+                name="email-contact"
+                id="email-contact"
+                title="Obligatorio. Ingresa un email válido"
+                autocomplete="off"
+                placeholder="Escribe tu email"
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                value="j@g.com"
+                required
+              />
+            </div>
+
+            <div class="form__group">
+              <input
+                type="text"
+                class="form__input"
+                name="phone-contact"
+                id="phone-contact"
+                title="El teléfono solo admite números, -, +, y ()"
+                autocomplete="off"
+                placeholder="Teléfono"
+                pattern="^[0-9*\s()+?-]*$"
+              />
+            </div>
+
+            <div class="form__group">
+              <span class="form__icon">*</span>
+              <textarea
+                class="form__input"
+                name="comments-contact"
+                id="comments-contact"
+                cols="50"
+                rows="5"
+                placeholder="Escribe tus comentarios"
+                title="Obligatorio. El comentario no puede exceder los 255 caracteres"
+                data-pattern="^.{1,10}$"
+                required
+              ></textarea>
+            </div>
+
+            <input
+              class="button__cta button__cta--subscribe"
+              value="Enviar"
+              type="submit"
+            />
+          </form>
+
+          <div id="spinner" class="spinner hidde"></div>
+
+          <h3 class="form__rta" id="form-rta"></h3>
+        </div>
+      </section>
+    </main>
+
     <footer class="footer">
       <section class="footer__container container">
-        <figure class="footer__picture">
-          <img src="./assets/logos/logo2.svg" alt="" class="footer__img" />
-        </figure>
-        <div class="suscribe">
-          <input
-            type="email"
-            class="suscribe__input"
-            id="Email"
-            name="Email"
-            placeholder="example@email.com"
-            autocomplete="off"
-          />
-          <input class="suscribe__submit" value="Subscribete" type="submit" />
-        </div>
-        <div class="footer__social">
-          <a href="#" class="footer__media">
-            <img
-              src="./assets/icons/icon-facebook.svg"
-              alt=""
-              class="footer__icon"
-            />
-          </a>
-          <a href="#" class="footer__media">
-            <img
-              src="./assets/icons/icon-twitter.svg"
-              alt=""
-              class="footer__icon"
-            />
-          </a>
+        <div class="container__form">
+          <form id="form-subscribe" class="form" novalidate>
+            <div class="form__group">
+              <span class="form__icon">*</span>
+              <input
+                type="text"
+                class="form__input"
+                name="name"
+                id="name"
+                title="Ingresa solo letras"
+                autocomplete="off"
+                placeholder="Ingresa tu nombre"
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <span class="form__icon">*</span>
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                name="email"
+                title="Ingresa un email válido"
+                autocomplete="off"
+                placeholder="Escribe tu email"
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                required
+              />
+            </div>
 
-          <a href="#" class="footer__media">
-            <img
-              src="./assets/icons/icon-instagram.svg"
-              alt=""
-              class="footer__icon"
+            <input
+              class="button__cta button__cta--subscribe"
+              value="Subscribete"
+              type="submit"
             />
-          </a>
+          </form>
+
+          <div id="spinner" class="spinner hidde"></div>
+
+          <h3 class="form__rta" id="form-rta"></h3>
+        </div>
+
+        <div class="footer__links">
+          <figure class="footer__picture">
+            <img src="./assets/logos/logo2.svg" alt="" class="footer__img" />
+          </figure>
+          <a href="#" class="footer__link">Horarios</a>
+          <a href="#" class="footer__link">Contacto</a>
+          <div class="footer__social">
+            <a href="#" class="footer__media">
+              <img
+                src="./assets/icons/icon-facebook.svg"
+                alt=""
+                class="footer__icon"
+              />
+            </a>
+            <a href="#" class="footer__media">
+              <img
+                src="./assets/icons/icon-twitter.svg"
+                alt=""
+                class="footer__icon"
+              />
+            </a>
+            <a href="#" class="footer__media">
+              <img
+                src="./assets/icons/icon-instagram.svg"
+                alt=""
+                class="footer__icon"
+              />
+            </a>
+          </div>
         </div>
       </section>
     </footer>
+
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

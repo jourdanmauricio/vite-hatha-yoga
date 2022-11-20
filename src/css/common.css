@@ -115,6 +115,95 @@
   /* animation: spinner 1s linear infinite; */
 }
 
+/************/
+/*   FORM   */
+/************/
+.container__form {
+  width: 100%;
+  height: 245px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form__rta {
+  color: var(--purple-medium);
+  font-size: 1.4em;
+  max-width: 80%;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form > * {
+  display: block;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.form__input--ok {
+  border: thin solid var(--purple-medium);
+}
+
+.form__group {
+  position: relative;
+  width: 90%;
+}
+
+.form__input {
+  /* min-height: 40px; */
+  width: 100%;
+  padding: 0.6em 1em;
+  color: var(--purple-medium);
+  font-size: 15px;
+  border: 1px solid var(--purple-medium);
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.form__icon {
+  position: absolute;
+  left: 5px;
+  color: red;
+}
+
+.button__cta--subscribe {
+  width: 90%;
+}
+
+.form__input:focus,
+.form__input:focus-visible {
+  border-color: var(--purple-ligth);
+  outline: none;
+}
+
+.form__input.form__input--error {
+  border: thin solid var(--input-error);
+}
+
+.form__error {
+  position: absolute;
+  width: 90%;
+  border-radius: 5px;
+  font-size: 80%;
+  color: var(--input-error);
+  transition: all 800ms ease;
+  text-align: center;
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+.spinner__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @keyframes spinner {
   0% {
     transform: rotate(0deg);

@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 90px;
+  /* margin-top: 90px; */
   background-color: var(--gray-ligth);
 }
 
@@ -8,93 +8,6 @@
   display: flex;
   flex-direction: column;
   gap: 90px;
-}
-
-/************/
-/*   FORM   */
-/************/
-.container__form {
-  width: 100%;
-  height: 245px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.subscribe__rta {
-  color: var(--purple-medium);
-  font-size: 1.4em;
-  max-width: 80%;
-}
-
-.subscribe__form {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.subscribe__form > * {
-  display: block;
-  width: 100%;
-  margin: 2rem auto;
-}
-
-.subscribe__input--ok {
-  border: thin solid var(--purple-medium);
-}
-
-.input__container {
-  position: relative;
-  width: 90%;
-}
-
-.subscribe__input {
-  min-height: 40px;
-  width: 100%;
-  padding: 0 1em;
-  color: var(--purple-medium);
-  font-size: 15px;
-  border: 1px solid var(--purple-medium);
-  border-radius: 6px;
-  background-color: transparent;
-}
-
-.button__cta--subscribe {
-  width: 90%;
-}
-
-.subscribe__input:focus,
-.subscribe__input:focus-visible {
-  border-color: var(--purple-ligth);
-  outline: none;
-}
-
-.subscribe__input.subscribe__input--error {
-  border: thin solid var(--input-error);
-}
-
-.subscribe__error {
-  position: absolute;
-  width: 90%;
-  border-radius: 5px;
-  font-size: 80%;
-  color: var(--input-error);
-  transition: all 800ms ease;
-  text-align: center;
-}
-
-.subscribe__error.is-active {
-  display: block;
-  animation: show-message 1s 1 normal 0s ease-out both;
-}
-
-.spinner__container {
-  /* width: 50%; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /*************/
