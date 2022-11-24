@@ -16,15 +16,12 @@ export default function form(form) {
     }
 
     let regex = new RegExp(pattern);
-    console.log(input.name, input.value, regex.exec(input.value));
     return regex.exec(input.value) === null ? "error" : "OK";
   }
 
   async function processForm() {
     const $spinner = d.querySelector(`${form} ~ div #spinner`);
     const $formRta = d.querySelector(`${form} ~ div #form-rta`);
-    console.log("form", $form);
-    console.log("spinner", $spinner);
 
     $form.classList.add("hidde");
     $spinner.classList.remove("hidde");
@@ -64,11 +61,8 @@ export default function form(form) {
 
     if (form === "#form-subscribe") {
       if (res.status === 200 || res.status === 201) {
-        // const data = await res.json();
-        // console.log("data", data);
         msg = "Gracias por suscribirte a nuestro newsletter!!!";
       } else {
-        // console.log(`Error: ${res.status} - ${res.statusText}`);
         msg = "Error en suscripción. Inténtalo más tarde";
       }
     }
