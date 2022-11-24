@@ -35,7 +35,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .contact__title {
@@ -64,11 +64,11 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
   /* x y blur color */
 }
-
+/* 
 .contact__contact {
   display: flex;
   gap: 1.5em;
-}
+} */
 
 .contact__link {
   text-decoration: none;

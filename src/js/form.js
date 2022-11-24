@@ -21,8 +21,10 @@ export default function form(form) {
   }
 
   async function processForm() {
-    const $spinner = d.querySelector(`${form} ~ #spinner`);
-    const $formRta = d.querySelector(`${form} ~ #form-rta`);
+    const $spinner = d.querySelector(`${form} ~ div #spinner`);
+    const $formRta = d.querySelector(`${form} ~ div #form-rta`);
+    console.log("form", $form);
+    console.log("spinner", $spinner);
 
     $form.classList.add("hidde");
     $spinner.classList.remove("hidde");
