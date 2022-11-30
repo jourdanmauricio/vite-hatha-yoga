@@ -27,13 +27,13 @@
             <a href="/">Inicio</a>
           </li>
           <li>
-            <a href="/#servicios">Servicios</a>
+            <a href="/index.html#servicios">Servicios</a>
           </li>
           <li>
-            <a href="/">Horarios</a>
+            <a href="/contacto.html#lessons">Horarios</a>
           </li>
           <li>
-            <a href="./contacto.html" class="menu__active">Contacto</a>
+            <a href="/contacto.html#contact" class="menu__active">Contacto</a>
           </li>
         </ul>
       </div>
@@ -43,19 +43,40 @@
             <a href="/">Inicio</a>
           </li>
           <li>
-            <a href="/">Servicios</a>
+            <a href="/index.html#servicios">Servicios</a>
           </li>
           <li>
-            <a href="/">Horarios</a>
+            <a href="/contacto.html#lessons">Horarios</a>
           </li>
           <li>
-            <a href="./contacto.html" class="menu__active">Contacto</a>
+            <a href="/contacto.html#contact" class="menu__active">Contacto</a>
           </li>
         </ul>
       </div>
     </nav>
-    <main class="contact__main">
-      <section class="contact__container container">
+    <main class="contact__main" id="lessons">
+      <section class="lessons__container">
+        <div class="container">
+          <div class="text__divider"><p>Nuestros horarios</p></div>
+          <p class="contact__paragraph">
+            Ya se pueden realizar las inscripciones acercándote al gimnasio o
+            poniéndote en contacto.
+          </p>
+
+          <table id="lessons-table" class="lessons__table">
+            <thead>
+              <tr>
+                <th>Días</th>
+                <th>Horario</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </section>
+
+      <div class="text__divider"><p>Contacto</p></div>
+
+      <section class="contact__container container" id="contact">
         <article class="contact__picture">
           <h2 class="contact__title">
             Si tienes alguna duda, comentario o sugerencia envíanos un mensaje o
@@ -67,7 +88,6 @@
         </article>
 
         <article class="contact__form">
-          <!-- <div class="text__divider"><p>Contacto</p></div> -->
           <form id="form-contact" class="form" novalidate>
             <div class="form__group">
               <span class="form__icon">*</span>
@@ -80,7 +100,6 @@
                 autocomplete="off"
                 placeholder="Ingresa tu nombre"
                 pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$"
-                value="Mau"
                 required
               />
             </div>
@@ -94,9 +113,8 @@
                 id="email-contact"
                 title="Obligatorio. Ingresa un email válido"
                 autocomplete="off"
-                placeholder="Escribe tu email"
+                placeholder="correo@dominio.com"
                 pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-                value="j@g.com"
                 required
               />
             </div>
@@ -109,7 +127,7 @@
                 id="phone-contact"
                 title="El teléfono solo admite números, -, +, y ()"
                 autocomplete="off"
-                placeholder="Teléfono"
+                placeholder="(xxx) xxxx-xxxx"
                 pattern="^[0-9*\s()+?-]*$"
               />
             </div>
@@ -122,7 +140,7 @@
                 id="comments-contact"
                 cols="50"
                 rows="5"
-                placeholder="Escribe tus comentarios"
+                placeholder="Escribe tu comentario"
                 title="Obligatorio. El comentario no puede exceder los 255 caracteres"
                 data-pattern="^.{1,10}$"
                 required

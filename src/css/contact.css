@@ -1,12 +1,60 @@
 /* .contact__main {
-  background-color: #edf6f9;
+  background-color: #9bc86a;
 } */
 
+/***************/
+/*   Lessons   */
+/***************/
+.lessons__container {
+  background-color: #9bc86a;
+}
+
+.lessons__table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+td,
+th {
+  padding-left: 8px;
+}
+
+thead tr {
+  height: 60px;
+  background: #ffed86;
+  font-size: 16px;
+}
+
+tbody tr {
+  height: 48px;
+  border-bottom: 1px solid #e3f1d5;
+}
+tbody tr:last-child {
+  border: 0;
+}
+
+td,
+th {
+  text-align: left;
+}
+
+/***************/
+/*   Contact   */
+/***************/
 .contact__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  padding-top: 0;
+  height: 500px;
   /* padding-bottom: 120px; */
 }
 
@@ -91,7 +139,6 @@
   }
 
   .contact__container {
-    /* height: 500px; */
     flex-direction: row;
     padding: 100px;
   }
