@@ -1,4 +1,10 @@
 export default async function api() {
+  if (
+    `${import.meta.env.VITE_URL}/contact.html` !==
+    window.location.href.split("#")[0]
+  )
+    return;
+
   const lessonsId = document.getElementById("lessons-table");
   const API_URL = `${import.meta.env.VITE_BACK_API}/lessons`;
 
