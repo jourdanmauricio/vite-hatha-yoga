@@ -119,7 +119,7 @@
 /************/
 .container__form {
   width: 100%;
-  height: 245px;
+  /* height: 245px; */
   display: flex;
   justify-content: center;
   align-items: center;

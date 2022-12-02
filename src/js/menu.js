@@ -2,6 +2,7 @@
 /*   Menu   */
 /************/
 export default function menu() {
+  console.log("!!!!!!!!!!!", window.location.href);
   const menuHamIcon = document.querySelector(".menu");
   const mobileMenu = document.querySelector(".mobile-menu");
 

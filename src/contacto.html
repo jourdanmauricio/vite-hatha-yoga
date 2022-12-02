@@ -21,13 +21,16 @@
     <nav>
       <img src="./assets/icons/icon_menu.svg" alt="menu" class="menu" />
       <div class="navbar">
-        <img src="./assets/logos/logo2.svg" alt="logo" class="logo" />
+        <!-- <img src="./assets/logos/logo2.svg" alt="logo" class="logo" /> -->
+        <!-- src="https://api.hathayogaloberia.ga/static/logo2.svg" -->
+        <img id="logo" alt="logo" class="logo" />
+
         <ul>
           <li>
             <a href="/">Inicio</a>
           </li>
           <li>
-            <a href="/index.html#servicios">Servicios</a>
+            <a href="/#servicios">Servicios</a>
           </li>
           <li>
             <a href="/contacto.html#lessons">Horarios</a>
@@ -40,16 +43,16 @@
       <div class="mobile-menu inactive">
         <ul>
           <li>
-            <a href="/">Inicio</a>
+            <a href="/#inicio">Inicio</a>
           </li>
           <li>
-            <a href="/index.html#servicios">Servicios</a>
+            <a href="/#servicios">Servicios</a>
           </li>
           <li>
             <a href="/contacto.html#lessons">Horarios</a>
           </li>
           <li>
-            <a href="/contacto.html#contact" class="menu__active">Contacto</a>
+            <a href="/contacto.html#contact">Contacto</a>
           </li>
         </ul>
       </div>
@@ -166,6 +169,8 @@
       <section class="footer__container container">
         <div class="container__form">
           <form id="form-subscribe" class="form" novalidate>
+            <p>Suscribite a nuestro newsletter y recibe nuestras novedades</p>
+
             <div class="form__group">
               <span class="form__icon">*</span>
               <input
@@ -197,7 +202,7 @@
 
             <input
               class="button__cta button__cta--subscribe"
-              value="Subscribete"
+              value="Suscribete"
               type="submit"
             />
           </form>
@@ -207,33 +212,63 @@
             <h3 class="form__rta" id="form-rta"></h3>
           </div>
         </div>
-
         <div class="footer__links">
           <figure class="footer__picture">
-            <img src="./assets/logos/logo2.svg" alt="" class="footer__img" />
+            <img
+              id="footer-logo"
+              src="./assets/logos/logo2.svg"
+              alt="Logo"
+              class="footer__img"
+            />
           </figure>
-          <a href="#" class="footer__link">Horarios</a>
-          <a href="#" class="footer__link">Contacto</a>
+          <div class="link__section">
+            <a href="/contacto.html#lessons" class="footer__link">Horarios</a>
+            <a href="/contacto.html#contact" class="footer__link">Contacto</a>
+          </div>
           <div class="footer__social">
             <a href="#" class="footer__media">
               <img
-                src="./assets/icons/icon-facebook.svg"
-                alt=""
+                src="./assets/icons/facebook2.svg"
+                alt="Facebook"
                 class="footer__icon"
+                rel="”nofollow”"
               />
             </a>
             <a href="#" class="footer__media">
               <img
                 src="./assets/icons/icon-twitter.svg"
-                alt=""
+                alt="twitter"
                 class="footer__icon"
+                rel="”nofollow”"
               />
             </a>
             <a href="#" class="footer__media">
               <img
                 src="./assets/icons/icon-instagram.svg"
-                alt=""
+                alt="Instagram"
                 class="footer__icon"
+                rel="”nofollow”"
+              />
+            </a>
+          </div>
+          <div class="link__section">
+            <span>Av Segurola 1523, Lobería. Telefono</span>
+          </div>
+          <div class="footer__social">
+            <a href="#" class="footer__media">
+              <img
+                src="./assets/icons/email2.svg"
+                alt="Facebook"
+                class="footer__icon"
+                rel="”nofollow”"
+              />
+            </a>
+            <a href="#" class="footer__media">
+              <img
+                src="./assets/icons/whatsapp2.svg"
+                alt="Facebook"
+                class="footer__icon"
+                rel="”nofollow”"
               />
             </a>
           </div>

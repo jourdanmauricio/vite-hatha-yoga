@@ -2,7 +2,7 @@
 @import "./menu.css";
 @import "./common.css";
 @import "./footer.css";
-@import "./contact.css";
+/* @import "./contact.css"; */
 
 html {
   /* font-size: 62.5%; */
@@ -214,7 +214,7 @@ body {
   flex-flow: wrap;
   align-items: center;
   justify-content: center;
-  --padding-container: 120px 0 0;
+  /* --padding-container: 120px 0 0; */
 }
 
 .concept__article {
@@ -308,13 +308,110 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
+/***************/
+/*   Lessons   */
+/***************/
+.lessons {
+  background-color: #9bc86a;
+}
+
+.lessons__paragraph {
+  text-align: center;
+  color: var(--black);
+  line-height: 1.5;
+  font-size: 1.1rem;
+  margin: 1.5em 0 1.2em 0;
+}
+
+.lessons__table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+td,
+th {
+  padding-left: 8px;
+}
+
+thead tr {
+  height: 60px;
+  background: #ffed86;
+  font-size: 16px;
+}
+
+tbody tr {
+  height: 48px;
+  border-bottom: 1px solid #e3f1d5;
+}
+tbody tr:last-child {
+  border: 0;
+}
+
+td,
+th {
+  text-align: left;
+}
+
+/***************/
+/*   CONTACT   */
+/***************/
+.contact {
+  padding: var(--padding-container);
+  text-align: center;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 0;
+}
+
+.contact__picture {
+  width: 100%;
+  height: 400px;
+  background-image: url("../assets/images/contact.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.contact__img {
+  width: 100%;
+  display: block;
+}
+
+.contact__title {
+  padding: 10px;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 500;
+  font-family: var(--font2);
+  color: var(--black);
+  text-align: center;
+}
+
 @media (min-width: 769px) {
   .hero-image {
     background-color: rgba(0, 0, 0, 0.25);
   }
-
   .hero-image h1 {
     font-size: 3rem;
+  }
+  .contact__container {
+    flex-direction: row;
+    /* padding: 100px; */
+  }
+  .contact__container article {
+    width: 50%;
   }
 }
 
