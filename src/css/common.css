@@ -167,6 +167,7 @@
   border: 1px solid var(--purple-medium);
   border-radius: 6px;
   background-color: transparent;
+  font-family: "Quicksand", sans-serif;
 }
 
 .form__icon {

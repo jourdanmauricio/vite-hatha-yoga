@@ -18,7 +18,6 @@
   flex-direction: column;
   justify-content: space-between;
   list-style: none;
-  color: var(--dark-grayish-blue);
   height: 230px;
 }
 
