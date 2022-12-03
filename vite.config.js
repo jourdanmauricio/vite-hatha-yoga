@@ -11,7 +11,7 @@ export default defineConfig(({ command, mode }) => {
       rollupOptions: {
         input: {
           index: path.resolve(__dirname, "src/index.html"),
-          contacto: path.resolve(__dirname, "src/contacto.html"),
+          // contacto: path.resolve(__dirname, "src/contacto.html"),
         },
       },
     },
