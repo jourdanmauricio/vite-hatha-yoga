@@ -45,13 +45,13 @@ nav {
 }
 
 .navbar ul li a.menu__active {
-  border: 1px solid var(--purple-medium);
-  color: var(--purple-medium);
+  border: 1px solid var(--button-color);
+  color: var(--button-color);
 }
 
 .navbar ul li a:hover {
-  border: 1px solid var(--purple-medium);
-  color: var(--purple-medium);
+  border: 1px solid var(--button-color);
+  color: var(--button-color);
 }
 
 .mobile-menu {

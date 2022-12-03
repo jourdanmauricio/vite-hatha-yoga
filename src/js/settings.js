@@ -1,3 +1,4 @@
+const d = document;
 export default async function api() {
   const API_URL = `${import.meta.env.VITE_BACK_API}/settings`;
 
@@ -21,26 +22,51 @@ export default async function api() {
 
   const phone = settings.filter((setting) => setting.feature === "phone")[0];
   const email = settings.filter((setting) => setting.feature === "email")[0];
+  const titleColor = settings.filter(
+    (setting) => setting.feature === "title_color"
+  )[0];
+  const paragraphColor = settings.filter(
+    (setting) => setting.feature === "paragraph_color"
+  )[0];
+  const buttonColor = settings.filter(
+    (setting) => setting.feature === "button_color"
+  )[0];
+  const effectColor = settings.filter(
+    (setting) => setting.feature === "effect_color"
+  )[0];
+  const errorColor = settings.filter(
+    (setting) => setting.feature === "error_color"
+  )[0];
+  const divisorColor = settings.filter(
+    (setting) => setting.feature === "divisor_color"
+  )[0];
 
-  //const titleColor
-  //const paragraphColor
+  console.log("settings", settings);
 
-  console.log("settings", whatsapp);
-
-  const $logoImg = document.getElementById("logo");
+  const $logoImg = d.getElementById("logo");
   $logoImg.src = logo.value;
-  const $logoFooter = document.getElementById("footer-logo");
+  const $logoFooter = d.getElementById("footer-logo");
   $logoFooter.src = logo.value;
-  const $phoneSpan = document.getElementById("phone");
+  const $phoneSpan = d.getElementById("phone");
   $phoneSpan.innerText = `Tel ${phone.value}`;
-  const $emailA = document.getElementById("footer-email");
+  const $emailA = d.getElementById("footer-email");
   $emailA.href = `mailto: ${email.value}`;
-  const $whatsappA = document.getElementById("footer-whatsapp");
+  const $whatsappA = d.getElementById("footer-whatsapp");
   $whatsappA.href = whatsapp.value;
-  const $facebookA = document.getElementById("footer-facebook");
+  const $facebookA = d.getElementById("footer-facebook");
   $facebookA.href = facebook.value;
-  const $twitterA = document.getElementById("footer-twitter");
+  const $twitterA = d.getElementById("footer-twitter");
   $twitterA.href = twitter.value;
-  const $instagramA = document.getElementById("footer-instagram");
+  const $instagramA = d.getElementById("footer-instagram");
   $instagramA.href = instagram.value;
+
+  d.documentElement.style.setProperty("--title-color", titleColor.value);
+  d.documentElement.style.setProperty(
+    "--paragraph-color",
+    paragraphColor.value
+  );
+  d.documentElement.style.setProperty("--button-color", buttonColor.value);
+  d.documentElement.style.setProperty("--effect-color", effectColor.value);
+  d.documentElement.style.setProperty("--error-color", errorColor.value);
+  d.documentElement.style.setProperty("--divisor-color", divisorColor.value);
 }
