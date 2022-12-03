@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--gray-ligth);
+  background-color: var(--gray-very-ligth);
 }
 
 .footer__container {
@@ -12,13 +12,14 @@
 /*   LINKS   */
 /*************/
 .footer__links {
-  margin: 2rem 0 0 0;
+  /* margin: 2rem 0 0 0; */
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: stretch;
   list-style: none;
-  height: 230px;
+  height: 350px;
 }
 
 .footer__picture {
@@ -78,10 +79,6 @@
   /**************/
   /*   FOOTER   */
   /**************/
-  .footer {
-    background-color: #f2f2f2;
-  }
-
   .footer__container {
     flex-direction: row;
     justify-content: space-evenly;
