@@ -2,7 +2,7 @@
 /*   TITLE   */
 /*************/
 .title {
-  font-size: 1.9rem;
+  font-size: var(--title-size);
   text-align: center;
   color: var(--title-color);
   margin-top: 1.5em;
@@ -15,7 +15,7 @@
   text-align: center;
   color: var(--paragraph-color);
   line-height: 1.5;
-  font-size: 1.1rem;
+  font-size: var(--paragraph-size);
   margin: 1.5em 0 1.2em 0;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .text__divider p {
-  background-color: var(--gray-ligth);
+  background-color: var(--gray-very-ligth);
   padding: 0 15px;
   border-radius: 5px;
 }
@@ -109,7 +109,7 @@
   color: #fff;
   padding: 7px 20px;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: var(--paragraph-size);
   border: 2px solid transparent;
   transition: 0.3s ease;
   border-radius: 5px;
@@ -149,7 +149,7 @@
 
 .form__rta {
   color: var(--button-color);
-  font-size: 1.4em;
+  font-size: var(--paragraph-size);
   width: 80%;
   height: 60%;
   margin-left: auto;
@@ -184,7 +184,7 @@
   width: 100%;
   padding: 0.6em 1em;
   color: var(--paragraph-color);
-  font-size: 15px;
+  font-size: var(--paragraph-size);
   border: 1px solid var(--button-color);
   border-radius: 6px;
   background-color: transparent;

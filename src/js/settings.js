@@ -40,6 +40,12 @@ export default async function api() {
   const divisorColor = settings.filter(
     (setting) => setting.feature === "divisor_color"
   )[0];
+  const titleSize = settings.filter(
+    (setting) => setting.feature === "title_font_size"
+  )[0];
+  const paragraphSize = settings.filter(
+    (setting) => setting.feature === "paragraph_font_size"
+  )[0];
 
   console.log("settings", settings);
 
@@ -69,4 +75,6 @@ export default async function api() {
   d.documentElement.style.setProperty("--effect-color", effectColor.value);
   d.documentElement.style.setProperty("--error-color", errorColor.value);
   d.documentElement.style.setProperty("--divisor-color", divisorColor.value);
+  d.documentElement.style.setProperty("--paragraph-size", paragraphSize.value);
+  d.documentElement.style.setProperty("--title-size", titleSize.value);
 }

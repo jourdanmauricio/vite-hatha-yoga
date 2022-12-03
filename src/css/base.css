@@ -5,12 +5,17 @@
   --effect-color: #531253;
   --error-color: #f44336;
   --divisor-color: #170312;
+  --gray-very-ligth: #eaeaea;
+  --gray-ligth: hsl(201, 11%, 66%);
+
+  --title-size: 30px;
+  --paragraph-size: 16px;
 
   --purple-dark: #170312;
   --purple-medium: #531253;
   --purple-ligth: #92698d;
 
-  --gray-ligth: #eaeaea;
+  /* --gray-ligth: #eaeaea; */
   --white: #f4fffd;
   --black: #000000;
   --dark-grayish-blue: hsl(210, 10%, 33%);

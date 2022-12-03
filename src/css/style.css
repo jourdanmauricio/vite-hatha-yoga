@@ -84,7 +84,7 @@ body {
 /*   Servicios   */
 /*****************/
 .servicios {
-  background: var(--gray-ligth);
+  background: var(--gray-very-ligth);
   text-align: center;
 }
 
@@ -225,7 +225,7 @@ body {
 .face.front {
   transform: perspective(100px) rotateY(0deg);
   padding: 1em;
-  background-color: var(--gray-ligth);
+  background-color: var(--gray-very-ligth);
 }
 
 .face__img {
@@ -239,7 +239,7 @@ body {
   padding: 1em;
   text-align: center;
   color: var(--effect-color);
-  background-color: var(--gray-ligth);
+  background-color: var(--gray-very-ligth);
 }
 
 .flex-row-reverse {
@@ -260,19 +260,20 @@ body {
 /*   Lessons   */
 /***************/
 .lessons {
-  background-color: #9bc86a;
+  /* background-color: #9bc86a; */
 }
 
 .lessons__table {
   border-spacing: 1;
   border-collapse: collapse;
-  background: white;
+  background: var(--gray-very-ligth);
   border-radius: 6px;
   overflow: hidden;
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
   position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 td,
@@ -284,11 +285,13 @@ thead tr {
   height: 60px;
   background: #ffed86;
   font-size: 16px;
+  border-bottom: 1px solid var(--gray-ligth);
 }
 
 tbody tr {
   height: 48px;
   border-bottom: 1px solid #e3f1d5;
+  border-bottom: 1px solid var(--gray-ligth);
 }
 tbody tr:last-child {
   border: 0;
