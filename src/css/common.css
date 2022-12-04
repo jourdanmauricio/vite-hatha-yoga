@@ -186,7 +186,7 @@
 .form__input {
   /* min-height: 40px; */
   width: 100%;
-  padding: 0.6em 1em;
+  padding: 0.4rem 1em;
   color: var(--paragraph-color);
   font-size: var(--paragraph-size);
   border: 1px solid var(--button-color);
