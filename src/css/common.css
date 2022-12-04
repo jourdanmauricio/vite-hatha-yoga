@@ -63,7 +63,8 @@
   margin-bottom: 60px;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
 }
@@ -71,7 +72,7 @@
 .gallery__img {
   display: block;
   width: 100%;
-  max-width: 360px;
+  max-width: 330px;
 }
 
 /*****************/
@@ -106,7 +107,7 @@
 .button__cta {
   display: block;
   margin: 2em auto;
-  min-width: 280px;
+  width: 280px;
   background-color: var(--button-color);
   color: #fff;
   padding: 7px 20px;
@@ -115,6 +116,7 @@
   border: 2px solid transparent;
   transition: 0.3s ease;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .button__cta:hover {
@@ -225,6 +227,11 @@
   animation: show-message 1s 1 normal 0s ease-out both;
 }
 
+.form__input--contact {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
@@ -237,8 +244,8 @@
 /*************/
 /*   Media   */
 /*************/
-@media (max-width: 992px) {
-  .galeria-container {
-    flex-direction: column;
+@media (min-width: 992px) {
+  .gallery__container {
+    flex-direction: row;
   }
 }

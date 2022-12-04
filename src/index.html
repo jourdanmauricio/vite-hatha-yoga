@@ -95,8 +95,8 @@
     <section class="serv" id="servicios" data-scroll-spy>
       <article class="servicios">
         <div class="container">
-          <div class="text__divider"><p>Lo que ofrecemos</p></div>
-          <h2 class="title">Nuestros Servicios</h2>
+          <div class="text__divider"><p>Servicios</p></div>
+          <!-- <h2 class="title">Nuestros Servicios</h2> -->
           <p class="paragraph">
             El yoga produce grandes beneficios a aquellos que lo practican con
             tenacidad y de forma regular.
@@ -148,7 +148,7 @@
             </article>
           </div>
 
-          <button class="button__cta">Más información</button>
+          <a href="/#contact" class="button__cta">Más información</a>
         </div>
       </article>
 
@@ -306,88 +306,90 @@
       </div>
     </section>
 
-    <section class="contact container" id="contact" data-scroll-spy>
-      <div class="text__divider"><p>Contacto</p></div>
-      <div class="contact__container">
-        <article class="contact__picture">
-          <h2 class="contact__title">
-            Si tienes alguna duda, comentario o sugerencia envíanos un mensaje o
-            correo electrónico y nos pondremos en contacto lo antes posible.
-          </h2>
-        </article>
+    <section class="contact" id="contact" data-scroll-spy>
+      <div class="container">
+        <div class="text__divider"><p>Contacto</p></div>
+        <div class="contact__container">
+          <article class="contact__picture">
+            <h2 class="contact__title">
+              Si tienes alguna duda, comentario o sugerencia envíanos un mensaje
+              o correo electrónico y nos pondremos en contacto lo antes posible.
+            </h2>
+          </article>
 
-        <article class="contact__form">
-          <form id="form-contact" class="form" novalidate>
-            <div class="form__group">
-              <span class="form__icon">*</span>
+          <article class="contact__form">
+            <form id="form-contact" class="form" novalidate>
+              <div class="form__group">
+                <span class="form__icon">*</span>
+                <input
+                  type="text"
+                  class="form__input form__input--contact"
+                  name="name-contact"
+                  id="name-contact"
+                  title="Obligatorio. Ingresa solo letras"
+                  autocomplete="off"
+                  placeholder="Ingresa tu nombre"
+                  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$"
+                  required
+                />
+              </div>
+
+              <div class="form__group">
+                <span class="form__icon">*</span>
+                <input
+                  type="email"
+                  class="form__input form__input--contact"
+                  name="email-contact"
+                  id="email-contact"
+                  title="Obligatorio. Ingresa un email válido"
+                  autocomplete="off"
+                  placeholder="correo@dominio.com"
+                  pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                  required
+                />
+              </div>
+
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input form__input--contact"
+                  name="phone-contact"
+                  id="phone-contact"
+                  title="El teléfono solo admite números, -, +, y ()"
+                  autocomplete="off"
+                  placeholder="(xxx) xxxx-xxxx"
+                  pattern="^[0-9*\s()+?-]*$"
+                />
+              </div>
+
+              <div class="form__group">
+                <span class="form__icon">*</span>
+                <textarea
+                  class="form__input form__input--contact"
+                  name="comments-contact"
+                  id="comments-contact"
+                  cols="50"
+                  rows="5"
+                  placeholder="Escribe tu comentario"
+                  title="Obligatorio. El comentario no puede exceder los 255 caracteres"
+                  data-pattern="^.{1,10}$"
+                  required
+                ></textarea>
+              </div>
+
               <input
-                type="text"
-                class="form__input"
-                name="name-contact"
-                id="name-contact"
-                title="Obligatorio. Ingresa solo letras"
-                autocomplete="off"
-                placeholder="Ingresa tu nombre"
-                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$"
-                required
+                class="button__cta button__cta--subscribe"
+                value="Enviar"
+                type="submit"
               />
+            </form>
+
+            <div>
+              <div id="spinner" class="spinner hidde"></div>
+              <h3 id="form-rta" class="form__rta"></h3>
             </div>
-
-            <div class="form__group">
-              <span class="form__icon">*</span>
-              <input
-                type="email"
-                class="form__input"
-                name="email-contact"
-                id="email-contact"
-                title="Obligatorio. Ingresa un email válido"
-                autocomplete="off"
-                placeholder="correo@dominio.com"
-                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-                required
-              />
-            </div>
-
-            <div class="form__group">
-              <input
-                type="text"
-                class="form__input"
-                name="phone-contact"
-                id="phone-contact"
-                title="El teléfono solo admite números, -, +, y ()"
-                autocomplete="off"
-                placeholder="(xxx) xxxx-xxxx"
-                pattern="^[0-9*\s()+?-]*$"
-              />
-            </div>
-
-            <div class="form__group">
-              <span class="form__icon">*</span>
-              <textarea
-                class="form__input"
-                name="comments-contact"
-                id="comments-contact"
-                cols="50"
-                rows="5"
-                placeholder="Escribe tu comentario"
-                title="Obligatorio. El comentario no puede exceder los 255 caracteres"
-                data-pattern="^.{1,10}$"
-                required
-              ></textarea>
-            </div>
-
-            <input
-              class="button__cta button__cta--subscribe"
-              value="Enviar"
-              type="submit"
-            />
-          </form>
-
-          <div>
-            <div id="spinner" class="spinner hidde"></div>
-            <h3 id="form-rta" class="form__rta"></h3>
-          </div>
-        </article>
+          </article>
+        </div>
       </div>
     </section>
 

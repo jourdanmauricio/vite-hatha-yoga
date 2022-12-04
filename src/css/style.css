@@ -261,9 +261,9 @@ body {
 /***************/
 /*   Lessons   */
 /***************/
-.lessons {
-  /* background-color: #9bc86a; */
-}
+/* .lessons {
+  background-color: #9bc86a;
+} */
 
 .lessons__table {
   border-spacing: 1;
@@ -285,14 +285,14 @@ th {
 
 thead tr {
   height: 60px;
-  background: #ffed86;
-  font-size: 16px;
+  background: var(--effect-color);
+  font-size: var(--paragraph-size);
+  color: var(--white);
   border-bottom: 1px solid var(--gray-ligth);
 }
 
 tbody tr {
   height: 48px;
-  border-bottom: 1px solid #e3f1d5;
   border-bottom: 1px solid var(--gray-ligth);
 }
 tbody tr:last-child {
@@ -301,7 +301,7 @@ tbody tr:last-child {
 
 td,
 th {
-  text-align: left;
+  text-align: center;
 }
 
 /***************/
@@ -310,6 +310,10 @@ th {
 .contact {
   padding: var(--padding-container);
   text-align: center;
+  background-image: url("../assets/images/contact.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .contact__container {
@@ -318,15 +322,19 @@ th {
   align-items: center;
   overflow: hidden;
   padding-top: 0;
+  /* background-image: url("../assets/images/contact.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; */
 }
 
 .contact__picture {
   width: 100%;
   height: 400px;
-  background-image: url("../assets/images/contact.jpg");
+  /* background-image: url("../assets/images/contact.jpg");
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .contact__img {
@@ -351,6 +359,10 @@ th {
   /* .hero-image h1 {
     font-size: 3rem;
   } */
+  .contact {
+    background-position: center 35%;
+  }
+
   .contact__container {
     flex-direction: row;
     /* padding: 100px; */
