@@ -46,6 +46,12 @@ export default async function api() {
   const paragraphSize = settings.filter(
     (setting) => setting.feature === "paragraph_font_size"
   )[0];
+  const titleWeight = settings.filter(
+    (setting) => setting.feature === "title_font_weight"
+  )[0];
+  const paragraphWeight = settings.filter(
+    (setting) => setting.feature === "paragraph_font_weight"
+  )[0];
 
   console.log("settings", settings);
 
@@ -77,4 +83,9 @@ export default async function api() {
   d.documentElement.style.setProperty("--divisor-color", divisorColor.value);
   d.documentElement.style.setProperty("--paragraph-size", paragraphSize.value);
   d.documentElement.style.setProperty("--title-size", titleSize.value);
+  d.documentElement.style.setProperty("--title-weight", titleWeight.value);
+  d.documentElement.style.setProperty(
+    "--paragraph-weight",
+    paragraphWeight.value
+  );
 }
