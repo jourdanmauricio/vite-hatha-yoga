@@ -48,12 +48,14 @@ body {
   text-align: center;
 }
 .hero-image h1 {
-  color: #fff;
-  font-size: 2rem;
+  color: var(--h1-color);
+  font-size: var(--h1-size);
+  font-weight: var(--h1-weight);
 }
 .hero-image p {
-  color: var(--white);
-  font-size: 1.1rem;
+  color: var(--paragraphHeader-color);
+  font-size: var(--paragraphHeader-size);
+  font-weight: var(--paragraphHeader-weight);
 }
 
 /****************/
@@ -346,9 +348,9 @@ th {
   .hero-image {
     background-color: rgba(0, 0, 0, 0.25);
   }
-  .hero-image h1 {
+  /* .hero-image h1 {
     font-size: 3rem;
-  }
+  } */
   .contact__container {
     flex-direction: row;
     /* padding: 100px; */

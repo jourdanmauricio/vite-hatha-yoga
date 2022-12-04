@@ -5,14 +5,20 @@
   --effect-color: #531253;
   --error-color: #f44336;
   --divisor-color: #170312;
+  --h1-color: #ffffff;
+  --paragraphHeader-color: #ffffff;
   --gray-very-ligth: #eaeaea;
   --gray-ligth: hsl(201, 11%, 66%);
 
-  --title-size: 30px;
-  --paragraph-size: 16px;
-
+  --h1-weight: 400;
+  --paragraphHeader-weigh: 400;
   --title-weight: 400;
   --paragraph-weight: 400;
+
+  --title-size: 30px;
+  --paragraph-size: 16px;
+  --h1-size: 38px;
+  --paragraphHeader-size: 16px;
 
   --purple-dark: #170312;
   --purple-medium: #531253;

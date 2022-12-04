@@ -40,17 +40,37 @@ export default async function api() {
   const divisorColor = settings.filter(
     (setting) => setting.feature === "divisor_color"
   )[0];
+  const h1Color = settings.filter(
+    (setting) => setting.feature === "h1_color"
+  )[0];
+  const paragraphHeaderColor = settings.filter(
+    (setting) => setting.feature === "paragraph_header_color"
+  )[0];
+
+  const h1Size = settings.filter(
+    (setting) => setting.feature === "h1_font_size"
+  )[0];
   const titleSize = settings.filter(
     (setting) => setting.feature === "title_font_size"
   )[0];
   const paragraphSize = settings.filter(
     (setting) => setting.feature === "paragraph_font_size"
   )[0];
+  const h1Weight = settings.filter(
+    (setting) => setting.feature === "h1_font_weight"
+  )[0];
   const titleWeight = settings.filter(
     (setting) => setting.feature === "title_font_weight"
   )[0];
   const paragraphWeight = settings.filter(
     (setting) => setting.feature === "paragraph_font_weight"
+  )[0];
+
+  const paragraphHeaderWeight = settings.filter(
+    (setting) => setting.feature === "paragraph_header_weight"
+  )[0];
+  const paragraphHeaderSize = settings.filter(
+    (setting) => setting.feature === "paragraph_header_size"
   )[0];
 
   console.log("settings", settings);
@@ -81,11 +101,26 @@ export default async function api() {
   d.documentElement.style.setProperty("--effect-color", effectColor.value);
   d.documentElement.style.setProperty("--error-color", errorColor.value);
   d.documentElement.style.setProperty("--divisor-color", divisorColor.value);
+  d.documentElement.style.setProperty("--h1-color", h1Color.value);
+  d.documentElement.style.setProperty(
+    "--paragraphHeader-color",
+    paragraphHeaderColor.value
+  );
   d.documentElement.style.setProperty("--paragraph-size", paragraphSize.value);
+  d.documentElement.style.setProperty("--h1-weight", h1Weight.value);
+  d.documentElement.style.setProperty("--h1-size", h1Size.value);
   d.documentElement.style.setProperty("--title-size", titleSize.value);
   d.documentElement.style.setProperty("--title-weight", titleWeight.value);
   d.documentElement.style.setProperty(
     "--paragraph-weight",
     paragraphWeight.value
+  );
+  d.documentElement.style.setProperty(
+    "--paragraphHeader-weight",
+    paragraphHeaderWeight.value
+  );
+  d.documentElement.style.setProperty(
+    "--paragraphHeader-size",
+    paragraphHeaderSize.value
   );
 }
