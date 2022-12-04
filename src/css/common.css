@@ -188,7 +188,7 @@
   width: 100%;
   padding: 0.4rem 1em;
   color: var(--paragraph-color);
-  font-size: var(--paragraph-size);
+  font-size: 16px;
   border: 1px solid var(--button-color);
   border-radius: 6px;
   background-color: transparent;
