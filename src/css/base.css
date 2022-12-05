@@ -8,7 +8,9 @@
   --h1-color: #ffffff;
   --paragraphHeader-color: #ffffff;
   --gray-very-ligth: #eaeaea;
-  --gray-ligth: hsl(201, 11%, 66%);
+  --gray-ligth: #9fabb2;
+  --background-color: #eaeaea;
+  --backgroundFooter-color: #9fabb2;
 
   --h1-weight: 400;
   --paragraphHeader-weigh: 400;

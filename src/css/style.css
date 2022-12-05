@@ -13,6 +13,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   overflow-y: scroll;
+  background-color: var(--background-color);
 }
 
 .container {
@@ -86,7 +87,7 @@ body {
 /*   Servicios   */
 /*****************/
 .servicios {
-  background: var(--gray-very-ligth);
+  /* background: var(--gray-very-ligth); */
   text-align: center;
 }
 

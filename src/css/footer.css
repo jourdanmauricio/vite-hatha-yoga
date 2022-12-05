@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--gray-very-ligth);
+  background-color: var(--backgroundFooter-color);
 }
 
 .footer__container {

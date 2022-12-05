@@ -46,6 +46,13 @@ export default async function api() {
   const paragraphHeaderColor = settings.filter(
     (setting) => setting.feature === "paragraph_header_color"
   )[0];
+  const backgroundColor = settings.filter(
+    (setting) => setting.feature === "background_color"
+  )[0];
+
+  const backgroundFooterColor = settings.filter(
+    (setting) => setting.feature === "background_footer_color"
+  )[0];
 
   const h1Size = settings.filter(
     (setting) => setting.feature === "h1_font_size"
@@ -106,6 +113,16 @@ export default async function api() {
     "--paragraphHeader-color",
     paragraphHeaderColor.value
   );
+
+  d.documentElement.style.setProperty(
+    "--background-color",
+    backgroundColor.value
+  );
+  d.documentElement.style.setProperty(
+    "--backgroundFooter-color",
+    backgroundFooterColor.value
+  );
+
   d.documentElement.style.setProperty("--paragraph-size", paragraphSize.value);
   d.documentElement.style.setProperty("--h1-weight", h1Weight.value);
   d.documentElement.style.setProperty("--h1-size", h1Size.value);
