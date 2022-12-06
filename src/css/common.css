@@ -35,7 +35,8 @@
 }
 
 .text__divider p {
-  background-color: var(--gray-very-ligth);
+  /* background-color: var(--gray-very-ligth); */
+  background-color: transparent;
   padding: 0 15px;
   border-radius: 5px;
 }
@@ -153,7 +154,7 @@
 
 .form__rta {
   color: var(--button-color);
-  font-size: var(--paragraph-size);
+  font-size: calc(var(--paragraph-size) * 2);
   width: 80%;
   height: 60%;
   margin-left: auto;

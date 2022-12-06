@@ -20,12 +20,20 @@ nav {
 }
 .logo {
   height: 45px;
-  width: 170px;
-  padding: 5px;
+  width: 180px;
+  fill: red;
+  color: red;
 }
+
+.logo g {
+  fill: red;
+  color: red;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar ul {
