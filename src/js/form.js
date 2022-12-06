@@ -75,6 +75,12 @@ export default function form(form) {
       }
     }
     $formRta.innerHTML = msg;
+
+    setTimeout(() => {
+      $formRta.innerHTML = "";
+      $form.reset();
+      $form.classList.remove("hidde");
+    }, 3000);
   }
 
   d.addEventListener("keyup", (e) => {

@@ -43,4 +43,6 @@
 
 .hidde {
   display: none;
+  /* transition: all 800ms ease;
+  animation: show-message 1s 1 normal 0s ease-out both; */
 }
