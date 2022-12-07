@@ -5,6 +5,9 @@ export default async function api() {
   const res = await fetch(API_URL);
   const settings = await res.json();
 
+  /***************/
+  /*   Contact   */
+  /***************/
   const logo = settings.filter((setting) => setting.feature === "logo")[0];
   const twitter = settings.filter(
     (setting) => setting.feature === "Twitter"
@@ -19,9 +22,15 @@ export default async function api() {
   const whatsapp = settings.filter(
     (setting) => setting.feature === "Whatsapp"
   )[0];
-
   const phone = settings.filter((setting) => setting.feature === "phone")[0];
   const email = settings.filter((setting) => setting.feature === "email")[0];
+  const address = settings.filter(
+    (setting) => setting.feature === "address"
+  )[0];
+
+  /*************/
+  /*   Color   */
+  /*************/
   const titleColor = settings.filter(
     (setting) => setting.feature === "title_color"
   )[0];
@@ -54,6 +63,10 @@ export default async function api() {
     (setting) => setting.feature === "background_footer_color"
   )[0];
 
+  /*************/
+  /*   Fonts   */
+  /*************/
+
   const h1Size = settings.filter(
     (setting) => setting.feature === "h1_font_size"
   )[0];
@@ -82,12 +95,16 @@ export default async function api() {
 
   console.log("settings", settings);
 
+  /********************************/
+
   const $logoImg = d.getElementById("logo");
   $logoImg.src = logo.value;
   const $logoFooter = d.getElementById("footer-logo");
   $logoFooter.src = logo.value;
   const $phoneSpan = d.getElementById("phone");
   $phoneSpan.innerText = `Tel ${phone.value}`;
+  const $addressSpan = d.getElementById("address");
+  $addressSpan.innerText = address.value;
   const $emailA = d.getElementById("footer-email");
   $emailA.href = `mailto: ${email.value}`;
   const $whatsappA = d.getElementById("footer-whatsapp");
